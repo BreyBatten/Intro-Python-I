@@ -18,9 +18,9 @@ f.closed
 # sure that it contains what you expect it to contain
 
 bar = open('bar.txt', 'w')
-bar.write("This is my written file. ")
-bar.write("Does this make another line? ")
-bar.write("No, the answer is no.")
+bar.write("This is my written file.")
+bar.write("\nDoes this make another line?")
+bar.write("\nYes, by putting that slash and n in the front.")
 bar.close()
 new_bar = open('bar.txt', 'r')
 print(new_bar.read())
